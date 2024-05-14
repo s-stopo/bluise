@@ -116,6 +116,12 @@ const nuxtConfig: Configuration = {
     lang: manifest.lang || 'en',
   },
 
+  runtimeConfig: {
+        public: {
+            NUXT_APP_BASE_URL: '/play/'
+        },
+    },
+
   meta: {
     ogTitle: false,
     ogDescription: false,
